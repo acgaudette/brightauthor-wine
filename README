@@ -1,5 +1,7 @@
 BrightAuthor on Arch Linux (13.09.17)
 
+Download and unzip the BrightAuthor setup package to this directory
+
 sudo pacman -S wine-staging winetricks
 export WINEPREFIX=<install location>
 ./install; ./run
