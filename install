@@ -1,5 +1,9 @@
 #!/bin/env bash
 
+if [ ! "$(grep WINEPREFIX env.sh)" ]; then
+  printf "export WINEPREFIX=$(pwd)/wine" >> env.sh
+fi
+
 source env.sh
 
 ln -sf setup_*/setup*.exe .
