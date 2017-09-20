@@ -8,7 +8,7 @@ source env.sh
 
 ln -sf setup_*/setup*.exe .
 
-[ -d wine] && rm -rf wine
+[ -d wine ] && rm -rf wine
 winetricks -q dotnet46
 wine setup*.exe
 
