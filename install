@@ -8,11 +8,11 @@ source env.sh
 
 ln -sf setup_*/setup*.exe .
 
-[ -d wine] && tra wine
+[ -d wine] && rm -rf wine
 winetricks -q dotnet46
 wine setup*.exe
 
 # GUI installer will launch
-# Go through install process, then exit
+# Go through the install process, then exit
 
 ls wine/drive_c/Program\ Files/BrightSign
