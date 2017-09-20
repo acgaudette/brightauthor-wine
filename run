@@ -1,5 +1,10 @@
 #!/bin/env bash
 
+if [ ! "$(grep WINEPREFIX env.sh)" ]; then
+  echo No WINEPREFIX. Did you ./install? >&2
+  exit 1
+fi
+
 source env.sh
 
 wine wine/drive_c/Program\ Files/BrightSign/BrightAuthor\ 4.6/BrightAuthor.exe
