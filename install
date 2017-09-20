@@ -17,7 +17,6 @@ fi
 wine setup*.exe
 
 # GUI installer will launch
-# Go through the install process, then exit
+# Go through the install process until it completes, then exit
 
 rm setup*.exe
-ls wine/drive_c/Program\ Files/BrightSign
